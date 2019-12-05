@@ -9,7 +9,8 @@ class SearchBox extends React.Component{
 
     onFormSubmit=event=>{
         event.preventDeafult();
-
+        
+        this.props.onFormSubmit(this.state.term);
     }
 
     render(){
