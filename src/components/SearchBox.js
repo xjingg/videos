@@ -1,7 +1,7 @@
 import React from 'react';
 
 class SearchBox extends React.Component{
-    state={term: ''};
+    state= {term: ''};
     
     onInputChange = event=>{
         this.setState({term: event.target.value});
@@ -16,10 +16,11 @@ class SearchBox extends React.Component{
     render(){
         return(
             <div className="search-bar ui segment">
-                <form pnSubmit={this.onFormSubmit} className="ui form">
+                <form onSubmit={this.onFormSubmit} className="ui form">
                     <input
                     type="text"
-                    value={this.onInputChange} />
+                    value={this.onInputChange} >
+                        </input>
                     </form>
                 </div>
         )
