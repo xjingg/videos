@@ -13,7 +13,7 @@ const App = () => {
           <SongDetail />
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 
